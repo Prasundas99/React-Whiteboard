@@ -1,0 +1,61 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  
+}
+
+/*left right toolbox menu*/
+.toolbox {
+  height: 42rem;
+  width: 3rem;
+  background-color: rgb(87, 87, 87);
+  position: absolute;
+  }
+/*left  toolbox*/
+.left {
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+/*right toolbox*/
+.right {
+  right: 0;
+  top: 0em;
+  z-index: 1;
+}
+
+/*Icons shaping starts here*/
+.toolbox .group{
+     margin-top: 1.2rem;
+     border: thin solid grey;
+}
+
+.toolbox .group .icons{
+  width: 2rem;
+  height: 2rem;
+  padding: 0.4rem;
+
+}
+
+.toolbox .group .icons :hover{
+     background-color: grey;
+     width: 2.1rem;
+     cursor: pointer;
+}
+
+.toolbox .group .icons img{
+     width: 100%;
+    }
+
+
+/* main screen */
+canvas {
+  background-color: white;
+  height: 85%;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
