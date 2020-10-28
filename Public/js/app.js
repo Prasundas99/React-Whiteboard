@@ -40,3 +40,6 @@ document.querySelectorAll("[data-color]").forEach(
           })
      }
 );
+
+
+//Working with Canvs api starts from here  
