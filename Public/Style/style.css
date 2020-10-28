@@ -2,7 +2,6 @@ body {
   padding: 0;
   margin: 0;
   background-color: black;
-  
 }
 
 /*left right toolbox menu*/
@@ -11,13 +10,15 @@ body {
   width: 3rem;
   background-color: rgb(87, 87, 87);
   position: absolute;
-  }
+}
+
 /*left  toolbox*/
 .left {
   left: 0;
   top: 0;
   z-index: 1;
 }
+
 /*right toolbox*/
 .right {
   right: 0;
@@ -26,37 +27,36 @@ body {
 }
 
 /*Left Icons shaping starts here*/
-.toolbox .group{
-     margin-top: 1.2rem;
-     border: thin solid grey;
+.toolbox .group {
+  margin-top: 1.2rem;
+  border: thin solid grey;
 }
 
-.toolbox .group .icons{
+.toolbox .group .icons {
   width: 2rem;
   height: 2rem;
   padding: 0.4rem;
-
 }
 
-.toolbox .group .icons :hover{
-     background-color: grey;
-     width: 2.1rem;
-     cursor: pointer;
+.toolbox .group .icons :hover {
+  background-color: grey;
+  width: 2.1rem;
+  cursor: pointer;
 }
 
-.toolbox .group .icons img{
-     width: 100%;
-     height: 100%;
-    }
+.toolbox .group .icons img {
+  width: 100%;
+  height: 100%;
+}
+
 /*Right icons shapping start here*/
 
-.toolbox .group .swatch{
+.toolbox .group .swatch {
   width: 1.6rem;
   height: 1.8rem;
   margin: 0.5rem;
   padding-left: 0.3rem;
   border: 1px solid white;
-
 }
 
 /* main screen */
