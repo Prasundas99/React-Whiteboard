@@ -38,9 +38,8 @@ body {
   padding: 0.4rem;
 }
 
-.toolbox .group .icons :hover {
-  background-color: grey;
-  width: 2.1rem;
+.toolbox .group .icons :hover  {
+  background-color: rgb(85, 85, 85);
   cursor: pointer;
 }
 
@@ -57,6 +56,16 @@ body {
   margin: 0.5rem;
   padding-left: 0.3rem;
   border: 1px solid white;
+}
+
+.toolbox  .group .swatch :hover  {
+  border: 1px solid rgb(180, 152, 29);
+ 
+}
+
+.active{
+  border:1px solid rgb(180, 152, 29);
+  background-color: grey;
 }
 
 /* main screen */
