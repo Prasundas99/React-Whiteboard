@@ -14,7 +14,7 @@ document.querySelectorAll("[data-tools]").forEach(
                document.querySelector("[data-tools].active").classList.toggle("active");
                item.classList.toggle("active");
                console.log(item.getAttribute("data-tools"));
-          })
+             })
      }
 );
 
@@ -43,3 +43,15 @@ document.querySelectorAll("[data-color]").forEach(
 
 
 //Working with Canvs api starts from here  
+const canvas = document.querySelector("#canvas");
+const cntx = canvas.getContext("2D");
+
+let painting = false;
+  
+  function startposition(){
+       painting = true;
+  }
+
+  function finishedposition(){
+       painting=false;
+  }
