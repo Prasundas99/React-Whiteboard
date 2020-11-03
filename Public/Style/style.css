@@ -46,10 +46,10 @@ body {
   padding: 0.4rem;
 }
 
-.toolbox .group  :hover  {
+.toolbox .group :hover {
   background-color: rgb(184, 184, 184);
   cursor: pointer;
- }
+}
 
 .toolbox .group .icons img {
   width: 100%;
@@ -64,27 +64,23 @@ body {
   margin: 0.5rem;
   padding-left: 0.3rem;
   border: 1px solid white;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.toolbox .group .swatch  :hover  {
+.toolbox .group .swatch :hover {
   background-color: rgb(184, 184, 184);
   cursor: pointer;
   height: 2.5rem;
   width: 2.5rem;
-  
 }
 
-.active{
-  border:1px solid rgb(180, 152, 29);
+.active {
+  border: 1px solid rgb(180, 152, 29);
   background-color: grey;
 }
 
 /* main screen */
 canvas {
   background-color: white;
-  position:absolute;
-  
-
-  
+  position: absolute;
 }
