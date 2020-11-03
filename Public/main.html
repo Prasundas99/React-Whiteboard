@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint App</title>
+    <link rel="stylesheet" href="./Style/style.css" />
+  </head>
+  <body>
+    <div class="toolbox left">
+      <!--for left menu bar-->
+      <div class="group command">
+        <div class="icons" data-command="undo" title="Undo">
+          <img src="./assets/undo-icon.png" alt="Undo" />
+        </div>
+        <div class="icons" data-command="download" title="Download">
+          <img src="./assets/download-icon.png" alt="Download" />
+        </div>
+      </div>
+      <div class="group tools">
+        <div class="icons active" data-tools="pencil" title="Pencil">
+          <img src="./assets/pencil-icon.png" alt="Pencil" />
+        </div>
+        <div class="icons" data-tools="brush" title="brush">
+          <img src="./assets/brush-icon.png" alt="brush" />
+        </div>
+        <div class="icons" data-tools="bucket" title="Bucket">
+          <img src="./assets/paint-bucket-icon.png" alt="bucket" />
+        </div>
+        <div class="icons" data-tools="eraser" title="eraser">
+          <img src="./assets/eraser-icon.png" alt="Eraser" />
+        </div>
+      </div>
+      <div class="group shapes">
+        <div class="icons" data-shape="line" title="Line">
+          <img src="./assets/line-icon.png" alt="Line" />
+        </div>
+        <div class="icons" data-shape="rectangle" title="rectangle">
+          <img src="./assets/rect-icon.png" alt="Rectangle" />
+        </div>
+        <div class="icons" data-shape="circle" title="circle">
+          <img src="./assets/circle-icon.png" alt="Circle" />
+        </div>
+        <div class="icons active" data-shape="triangle" title="triangle">
+          <img src="./assets/tri-icon.png" alt="Triangle" />
+        </div>
+      </div>
+    </div>
+
+    <canvas id="canvas" ></canvas>
+
+    <div class="toolbox right">
+      <!--for right menu bar-->
+      <div class="group colors">
+        <!--colour palate-->
+        <div class="item" data-color="#ffffff">
+          <div class="swatch active" style="background-color: #ffffff"></div>
+        </div>
+        <div class="item active" data-color="#000000">
+          <div class="swatch" style="background-color: #000000"></div>
+        </div>
+        <div class="item" data-color="#ff0000">
+          <div class="swatch" style="background-color: #ff0000"></div>
+        </div>
+        <div class="item" data-color="#00ff00">
+          <div class="swatch" style="background-color: #00ff00"></div>
+        </div>
+        <div class="item" data-color="#0000ff">
+          <div class="swatch" style="background-color: #0000ff"></div>
+        </div>
+        <div class="item" data-color="#00ffff">
+          <div class="swatch" style="background-color: #00ffff"></div>
+        </div>
+        <div class="item" data-color="#ff00ff">
+          <div class="swatch" style="background-color: #ff00ff"></div>
+        </div>
+        <div class="item" data-color="#ffff00">
+          <div class="swatch" style="background-color: #ffff00"></div>
+        </div>
+        <div class="item" data-color="#c46f0f">
+          <div class="swatch" style="background-color: #c46f0f"></div>
+        </div>
+        <div class="item" data-color="#fd8f27">
+          <div class="swatch" style="background-color: #fd8f27"></div>
+        </div>
+        <div class="item" data-color="#0099ff">
+          <div class="swatch" style="background-color: #0099ff"></div>
+        </div>
+        <div class="item" data-color="#ff009d">
+          <div class="swatch" style="background-color: #ff009d"></div>
+        </div>
+      </div>
+    </div>
+   <script src="./js/app.js" ></script>
+  </body>
+</html>
