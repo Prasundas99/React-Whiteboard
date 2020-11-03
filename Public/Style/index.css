@@ -1,42 +1,66 @@
-body{
-     background-image: url("https://images.unsplash.com/photo-1576033897961-a9ee9479d78e?ixlib=rb-1.2.1&auto=format&fit=crop&w=796&q=80");
-     background-repeat: no-repeat;
-     background-size: cover;
-     height: 100vh;
-                   
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-image: url("https://images.unsplash.com/photo-1592754160816-4f11134c602a?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+body {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.555)),
+    url("https://images.unsplash.com/photo-1576033897961-a9ee9479d78e?ixlib=rb-1.2.1&auto=format&fit=crop&w=796&q=80")
+      no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* @media only screen and (max-width: 600px) {
+  html {
+    background: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.555)),
+      url("https://images.unsplash.com/photo-1576033897961-a9ee9479d78e?ixlib=rb-1.2.1&auto=format&fit=crop&w=796&q=80")
+        no-repeat center center fixed;
+  }
+} */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.container p {
+  font-family: cursive;
+  font-size: 5rem;
+  background-image: linear-gradient(
+    to right,
+    #f20bd2,
+    #ff146c,
+    #ff8b00,
+    #c6d100,
+    #00ff7e
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 390px) {
+  .container p {
+    font-size: 3.2rem;
   }
 }
 
-
-.container{
-     font-family: cursive;
-     color: whitesmoke;
-     font-size: 5rem;
-     position: fixed;
-     top: 25%;
-     right: 10%;
+.containers {
+  flex: 1;
+  height: 30vh;
+  width: 100%;
+  background: rgba(0, 0, 255, 0.09) no-repeat cover;
+  position: absolute;
+  bottom: 0em;
+  transition: 0.5s;
 }
-
-@media only screen and (max-width: 600px) {
-.container{
-     font-size: 15vw;
- }
-}
-
-
-.containers{
-     height:30vh;
-     width: 100%;
-     background: rgba(0, 0, 255, 0.090);
-     position: absolute;
-     bottom: 0em;
-     transition: 0.5s;
-}
-.containers:hover{
-     background: rgba(0, 140, 255, 0.089);
+.containers:hover {
+  background: rgba(0, 140, 255, 0.089);
 }
