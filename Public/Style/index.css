@@ -26,8 +26,8 @@ body {
   background-image: linear-gradient(
     237deg,
     #a200ff,
-    #636368ef,
-    #eaecf0
+    #746792ef,
+    #ffffff
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -46,13 +46,13 @@ body {
   flex: 1;
   height: 30vh;
   width: 100%;
-  background: rgba(0, 0, 255, 0.068) ;
+  background: rgba(0, 0, 255, 0.047) ;
   position: absolute;
   bottom: 0em;
   transition: 0.5s;
 }
 .containers:hover {
-  background: rgba(0, 140, 255, 0.089);
+  background: rgba(0, 140, 255, 0.069);
 }
 
 
@@ -63,22 +63,22 @@ body {
   display: flex;
   }
 
-input{
+.input-Code{
   background-color: white;
  border: none;
   padding: 15px 2rem;
   border-radius: 1rem 0 0 1rem; 
 }
 
-button{
+.button{
   border-radius: 0 1rem 1rem 0;
   padding: 15px 2rem;
-  background-color:rgb(128, 206, 171);
+  background-color:#33bea8;
   color:#fff;
   font-weight: 700;
   cursor: pointer;
   border: none;
 }
-button:hover{
+.button:hover{
   background-color:rgb(148, 223, 189);
 }
