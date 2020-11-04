@@ -13,14 +13,6 @@ body {
   height: 100vh;
 }
 
-/* @media only screen and (max-width: 600px) {
-  html {
-    background: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.555)),
-      url("https://images.unsplash.com/photo-1576033897961-a9ee9479d78e?ixlib=rb-1.2.1&auto=format&fit=crop&w=796&q=80")
-        no-repeat center center fixed;
-  }
-} */
-
 .container {
   display: flex;
   align-items: center;
@@ -32,12 +24,10 @@ body {
   font-family: cursive;
   font-size: 5rem;
   background-image: linear-gradient(
-    to right,
-    #f20bd2,
-    #ff146c,
-    #ff8b00,
-    #c6d100,
-    #00ff7e
+    237deg,
+    #a200ff,
+    #636368ef,
+    #eaecf0
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -56,11 +46,39 @@ body {
   flex: 1;
   height: 30vh;
   width: 100%;
-  background: rgba(0, 0, 255, 0.09) no-repeat cover;
+  background: rgba(0, 0, 255, 0.068) ;
   position: absolute;
   bottom: 0em;
   transition: 0.5s;
 }
 .containers:hover {
   background: rgba(0, 140, 255, 0.089);
+}
+
+
+.form{
+  width: 30%;
+  margin:  0 auto;
+  margin-top: 10vh;
+  display: flex;
+  }
+
+input{
+  background-color: white;
+ border: none;
+  padding: 15px 2rem;
+  border-radius: 1rem 0 0 1rem; 
+}
+
+button{
+  border-radius: 0 1rem 1rem 0;
+  padding: 15px 2rem;
+  background-color:rgb(128, 206, 171);
+  color:#fff;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+button:hover{
+  background-color:rgb(148, 223, 189);
 }
