@@ -13,13 +13,13 @@ body {
   height: 100vh;
 }
 
+
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
 }
-
 .container p {
   font-family: cursive;
   font-size: 5rem;
@@ -35,13 +35,15 @@ body {
   background-attachment: fixed;
   margin-bottom: 5rem;
 }
-
 @media only screen and (max-width: 390px) {
   .container p {
     font-size: 3.2rem;
   }
 }
 
+
+/*Form part starts here*/
+/*Background*/
 .containers {
   flex: 1;
   height: 30vh;
@@ -54,13 +56,13 @@ body {
 .containers:hover {
   background: rgba(0, 140, 255, 0.069);
 }
-
-
+/*Form*/
 .form{
   width: 30%;
   margin:  0 auto;
   margin-top: 10vh;
   display: flex;
+  position:relative;
   }
 
 .input-Code{
@@ -79,6 +81,7 @@ body {
   cursor: pointer;
   border: none;
 }
+
 .button:hover{
   background-color:rgb(148, 223, 189);
 }
