@@ -72,8 +72,12 @@ body {
 .input-Code {
   text-decoration: none;
   background-color: white;
-  border: none;
   padding: 15px 2rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+  -webkit-border-radius: 1rem 0rem 0rem 1rem;
+  -moz-border-radius: 1rem 0rem 0rem 1rem;
+  -ms-border-radius: 1rem 0rem 0rem 1rem;
+  -o-border-radius: 1rem 0rem 0rem 1rem;
 }
 
 input[type="text"],
