@@ -52,9 +52,11 @@ textarea {
 
 .tools {
   position: fixed;
-  top: 90px;
+  top: 61px;
   left: 50px;
   z-index: 2000;
+  background-color: rgb(247, 247, 247);
+  
 }
 
 .colors,
