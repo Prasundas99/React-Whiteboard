@@ -13,22 +13,27 @@ body {
   height: 100vh;
 }
 
+@keyframes fadein {
+  0% {
+    background: #131514;
+  }
+  100% {
+    background: #13151400;
+  }
+}
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
+  animation-name: fadein;
+  animation-duration: 3s;
 }
 .container p {
   font-family: cursive;
   font-size: 5rem;
-  background-image: linear-gradient(
-    237deg,
-    #a200ff,
-    #746792ef,
-    #ffffff
-  );
+  background-image: linear-gradient(237deg, #a200ff, #746792ef, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -41,14 +46,13 @@ body {
   }
 }
 
-
 /*Form part starts here*/
 /*Background*/
 .containers {
   flex: 1;
   height: 30vh;
   width: 100%;
-  background: rgba(0, 0, 255, 0.047) ;
+  background: rgba(0, 0, 255, 0.047);
   position: absolute;
   bottom: 0em;
   transition: 0.5s;
@@ -57,31 +61,42 @@ body {
   background: rgba(0, 140, 255, 0.069);
 }
 /*Form*/
-.form{
-  width: 30%;
-  margin:  0 auto;
-  margin-top: 10vh;
+.form {
   display: flex;
-  position:relative;
-  }
-
-.input-Code{
-  background-color: white;
- border: none;
-  padding: 15px 2rem;
-  border-radius: 1rem 0 0 1rem; 
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 50%;
 }
 
-.button{
+.input-Code {
+  text-decoration: none;
+  background-color: white;
+  padding: 15px 2rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+  -webkit-border-radius: 1rem 0rem 0rem 1rem;
+  -moz-border-radius: 1rem 0rem 0rem 1rem;
+  -ms-border-radius: 1rem 0rem 0rem 1rem;
+  -o-border-radius: 1rem 0rem 0rem 1rem;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+}
+
+.button {
   border-radius: 0 1rem 1rem 0;
   padding: 15px 2rem;
-  background-color:#33bea8;
-  color:#fff;
+  background-color: #33bea8;
+  color: #fff;
   font-weight: 700;
   cursor: pointer;
   border: none;
 }
 
-.button:hover{
-  background-color:rgb(148, 223, 189);
+.button:hover {
+  background-color: rgb(148, 223, 189);
 }
