@@ -13,14 +13,7 @@ body {
   height: 100vh;
 }
 
-@keyframes fadein {
-  0% {
-    background: #131514;
-  }
-  100% {
-    background: #13151400;
-  }
-}
+
 
 .container {
   display: flex;
@@ -30,6 +23,16 @@ body {
   animation-name: fadein;
   animation-duration: 3s;
 }
+
+@keyframes fadein {
+  0% {
+    background: #131514;
+  }
+  100% {
+    background: #13151400;
+  }
+}
+
 .container p {
   font-family: cursive;
   font-size: 5rem;
