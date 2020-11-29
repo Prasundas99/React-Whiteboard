@@ -4,6 +4,7 @@
   "description": "A collaborative whiteboard for  using websocket and webRTc.",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
