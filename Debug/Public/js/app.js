@@ -1,16 +1,15 @@
-//Working with Canvs api starts from here  
+//Working with Canvs api starts from here
 
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
+// var canvas = document.getElementById("canvas");
+// var ctx = canvas.getContext("2d");
 
-var widthRatio = 3;
-canvas.height = 120;
-canvas.width = canvas.height * widthRatio;
+// var widthRatio = 3;
+// canvas.height = 120;
+// canvas.width = canvas.height * widthRatio;
 
-
-ctx.moveTo(0, 0);
-ctx.lineTo(200, 100);
-ctx.stroke();
+// ctx.moveTo(0, 0);
+// ctx.lineTo(200, 100);
+// ctx.stroke();
 
 /*//Sellecting elements of the commands
 document.querySelectorAll("[data-command]").forEach(
@@ -93,6 +92,6 @@ let painting = false;
 
 
  */
- 
-  ctx.fillStyle = "#FF0000";
-  ctx.fillRect(0, 0, 150, 75);
+
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 150, 75);
