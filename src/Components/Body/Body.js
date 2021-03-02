@@ -1,6 +1,16 @@
-import { SketchField, Tools } from "react-sketch-whiteboard";
+import { SketchField, Tools, setBackgroundFromDataUrl } from "react-sketch-whiteboard";
+import { io } from "socket.io-client";
+
 
 export default function Body({ color, lineWidth }) {
+  var socket = io('http://localhost:5000', {transports: ['websocket']});
+  socket.on('connect', function () {
+    console.log('connected!');
+    socket.emit('greet', { message: 'Hello Mr.Server!' });
+  });
+
+
+  //socket.current.emit('drawing', setBackgroundFromDataUrl);
   return (
     <div>
       <SketchField
